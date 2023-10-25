@@ -1,12 +1,9 @@
-@media screen and (max-width:540px){
+@media screen and (max-width: 540px) {
   * {
     margin: 0;
     padding: 0;
   }
-  html {
-    overflow: hidden;
-  }
-  
+
   html,
   body {
     border: 0px solid black;
@@ -20,113 +17,94 @@
   .section3 {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-attachment: fixed;
   }
-  .section1 {background-image: url("/src/images/main_slide/mainSlide_men_1.jpeg");}
-  .section2 { background-image: url("/src/images/main_slide/mainSlide_men_2.jpeg"); }
-  .section3 {background-image: url("/src/images/main_slide/mainSlide_men_3.jpeg");  }
+
   .section4 {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 60%;
   }
- 
-
-  
-    
-
-  
-
-  
   /* 이전버튼 영역 */
-  /* .prev1,
+  .prev1,
   .prev2,
   .prev3,
   .prev4 {
     display: none;
-    display: none;
-    width: 50px;
-    height: 50px;
-    left: 50px;
-    top: 50%;
-    position: absolute;
-  } */
-  
+  }
   /* 다음버튼 영역 */
-  /* .next1,
+  .next1,
   .next2,
   .next3,
   .next4 {
     display: none;
-    width: 50px;
-    height: 50px;
-    right: 20px;
-    top: 50%;
-    position: absolute;
-  } */
+  }
   /* 슬라이드 전체 영역 */
-  div#slideWrap1,
-  div#slideWrap2,
-  div#slideWrap3,
-  div#slideWrap4 {
-    display: none;
+  /* div#slideWrap1,
+div#slideWrap2,
+div#slideWrap3,
+div#slideWrap4 {
+  width: 100%;
+}  */
+  div#slideWrap1 {
+    border: 0px solid red;
     width: 100%;
-    height: 100%;
+    position: relative;
+    top: 50px;
   }
-  
-  /* 패럴랙스 사용을 위해 백그라운드 이미지 사용 */
-  /* div#slideWrap1 p#slide1 {
-    background-image: url("/src/images/main_slide/mainSlide_men_1.jpeg");
+  div#slideWrap2 {
+    border: 0px solid blue;
+    width: 100%;
+    position: relative;
+    top: 50px;
   }
-  div#slideWrap2 p#slide2 {
-    background-image: url("/src/images/main_slide/mainSlide_men_2.jpeg");
+  div#slideWrap3 {
+    border: 0px solid red;
+    width: 100%;
+    position: relative;
+    top: 50px;
   }
-  div#slideWrap3 p#slide3 {
-    background-image: url("/src/images/main_slide/mainSlide_men_3.jpeg");
-  }
-   */
+
   /* 슬라이드 이미지 영역 */
-  /* div#slideWrap1 p#slide1 img,
+  div#slideWrap1 p#slide1 img,
   div#slideWrap2 p#slide2 img,
   div#slideWrap3 p#slide3 img,
   div#slideWrap4 p#slide4 img {
-    float: left;
-    width: 25%;
-    height: 100%;
-  } */
-  
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    display: none;
+    /* height: 100%;  */
+  }
+  div#slideWrap1 p#slide1 img:nth-child(1) {
+    display: block;
+  }
+  div#slideWrap2 p#slide2 img:nth-child(1) {
+    display: block;
+  }
+  div#slideWrap3 p#slide3 img:nth-child(1) {
+    display: block;
+  }
+  div#slideWrap4 p#slide4 img:nth-child(1) {
+    display: block;
+  }
   /* 슬라이드 영역 */
-  /* div#slideWrap1 p#slide1,
+  div#slideWrap1 p#slide1,
   div#slideWrap2 p#slide2,
   div#slideWrap3 p#slide3,
   div#slideWrap4 p#slide4 {
     position: absolute;
     left: 0%;
     top: 0;
-    width: 400%;
+    width: 100%;
     height: 100%;
-    transition: all 0.5s;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: left;
-    border: 0px solid red;
-  } */
-  
-  /* 1019추가 */
-  i.fa-angle-left,
-  i.fa-angle-right {
-    color: black;
-  }
-  i.fa-angle-left:hover,
-  i.fa-angle-right:hover {
-    color: lightgray;
+    /* transition: all 0.5s; */
   }
 }
-@media screen and (min-width:1024px){
+
+@media screen and (min-width: 1024px) {
   * {
     margin: 0;
     padding: 0;
@@ -134,7 +112,7 @@
   html {
     overflow: hidden;
   }
-  
+
   html,
   body {
     border: 0px solid black;
@@ -163,7 +141,7 @@
     width: 100%;
     height: 100%;
   }
-  
+
   /* 이전버튼 영역 */
   .prev1,
   .prev2,
@@ -176,7 +154,7 @@
     top: 50%;
     position: absolute;
   }
-  
+
   /* 다음버튼 영역 */
   .next1,
   .next2,
@@ -196,7 +174,18 @@
     width: 100%;
     height: 100%;
   }
-  
+  div#slideWrap1 p#slide1 img:nth-child(1) {
+    display: none;
+  }
+  div#slideWrap2 p#slide2 img:nth-child(1) {
+    display: none;
+  }
+  div#slideWrap3 p#slide3 img:nth-child(1) {
+    display: none;
+  }
+  div#slideWrap4 p#slide4 img:nth-child(1) {
+    display: none;
+  }
   /* 패럴랙스 사용을 위해 백그라운드 이미지 사용 */
   div#slideWrap1 p#slide1 {
     background-image: url("/src/images/main_slide/mainSlide_men_1.jpeg");
@@ -207,7 +196,7 @@
   div#slideWrap3 p#slide3 {
     background-image: url("/src/images/main_slide/mainSlide_men_3.jpeg");
   }
-  
+
   /* 슬라이드 이미지 영역 */
   div#slideWrap1 p#slide1 img,
   div#slideWrap2 p#slide2 img,
@@ -217,7 +206,7 @@
     width: 25%;
     height: 100%;
   }
-  
+
   /* 슬라이드 영역 */
   div#slideWrap1 p#slide1,
   div#slideWrap2 p#slide2,
@@ -235,7 +224,7 @@
     background-position: left;
     border: 0px solid red;
   }
-  
+
   /* 1019추가 */
   i.fa-angle-left,
   i.fa-angle-right {

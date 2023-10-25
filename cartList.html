@@ -91,98 +91,99 @@
       <!-- 메인메뉴 -->
       <h2 id="toggleBtn"><i class="fa-solid fa-bars"></i></h2>
       <nav id="test">
-      <ul id="mainMenu">
-        <li class="Men">
-          <a href="itemList.html?navCategory=Men&category=men_tops">Men</a>
-        </li>
-        <li class="Women">
-          <a href="itemList.html?navCategory=Women&category=women_tops"
-            >Women</a
-          >
-        </li>
-        <li class="Kids">
-          <a href="itemList.html?navCategory=Kids&category=kids_tops">Kids</a>
-        </li>
-        
-      </ul>
-      <!-- 보조메뉴 -->
-      <div id="infoWrap">
-      <ul id="infoMenu">
-        <li>
-          <a
-            id="custom-login-btn"
-            href="#ex1"
-            rel="modal:open"
-            class="login-btn"
-            >로그인</a
-          >
-        </li>
-        <li>
-          <a id="custom-logout-btn" href="./index.html" class="auth login-btn"
-            >로그아웃</a
-          >
-        </li>
-        
-      </ul>
-    </div>
-    </nav>
-     <!--로그인 모달창-->
-     <div id="ex1" class="modal">
-      <!--1024추가-->
-      <h2>로그인</h2>
-      <hr />
-      <form id="loginArea">
-        <fieldset>
-          <legend>회원로그인</legend>
-          <!-- <p class="userId"> -->
-          <input
-            type="text"
-            required
-            placeholder="ID"
-            title=""
-            value=""
-            class="id"
-            id="userId"
-            style="height: 30px"
-          />
-          <!-- </p> -->
-          <p>
+        <ul id="mainMenu">
+          <li class="Men">
+            <a href="itemList.html?navCategory=Men&category=men_tops">Men</a>
+          </li>
+          <li class="Women">
+            <a href="itemList.html?navCategory=Women&category=women_tops"
+              >Women</a
+            >
+          </li>
+          <li class="Kids">
+            <a href="itemList.html?navCategory=Kids&category=kids_tops">Kids</a>
+          </li>
+        </ul>
+        <!-- 보조메뉴 -->
+        <div id="infoWrap">
+          <ul id="infoMenu">
+            <li>
+              <a
+                id="custom-login-btn"
+                href="#ex1"
+                rel="modal:open"
+                class="login-btn"
+                >로그인</a
+              >
+            </li>
+            <li>
+              <a
+                id="custom-logout-btn"
+                href="./index.html"
+                class="auth login-btn"
+                >로그아웃</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--로그인 모달창-->
+      <div id="ex1" class="modal">
+        <!--1024추가-->
+        <h2>로그인</h2>
+        <hr />
+        <form id="loginArea">
+          <fieldset>
+            <legend>회원로그인</legend>
+            <!-- <p class="userId"> -->
             <input
-              type="password"
+              type="text"
               required
-              placeholder="PASSWORD"
-              value="pw"
-              id="userPw"
-              size="20"
+              placeholder="ID"
+              title=""
+              value=""
+              class="id"
+              id="userId"
               style="height: 30px"
             />
-          </p>
-          <div class="loginBtnArea">
-            <button type="submit" id="logbtn" class="btn-login">
-              로그인
-            </button>
-            <button class="btn-signUp">회원가입</button>
-          </div>
-        </fieldset>
-      </form>
-      <div class="find_password">
-        <a href="/forgot-password">아이디 또는 비밀번호를 잊으셨나요?</a>
+            <!-- </p> -->
+            <p>
+              <input
+                type="password"
+                required
+                placeholder="PASSWORD"
+                value="pw"
+                id="userPw"
+                size="20"
+                style="height: 30px"
+              />
+            </p>
+            <div class="loginBtnArea">
+              <button type="submit" id="logbtn" class="btn-login">
+                로그인
+              </button>
+              <button class="btn-signUp">회원가입</button>
+            </div>
+          </fieldset>
+        </form>
+        <div class="find_password">
+          <a href="/forgot-password">아이디 또는 비밀번호를 잊으셨나요?</a>
+        </div>
+        <div class="login_api_kakao">
+          <a
+            href="https://kauth.kakao.com/oauth/authorize?client_id=d860d38c992ca8bf5f07dcc3fd5122b9&redirect_uri=http://localhost:9090/member/auth/kakao/callback&response_type=code"
+            ><img src="./src/images/login/kakao_login.jpg"
+          /></a>
+        </div>
+        <div class="login_api_google">
+          <a
+            href="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&theme=glif&flowName=GlifWebSignIn&flowEntry=SignUp"
+            ><img src="./src/images/login/google_btn.jpg"
+          /></a>
+        </div>
+        <!--1024수정-->
+        <a href="#" rel="modal:close" id="close-login"></a>
       </div>
-      <div class="login_api_kakao">
-        <a
-          href="https://kauth.kakao.com/oauth/authorize?client_id=d860d38c992ca8bf5f07dcc3fd5122b9&redirect_uri=http://localhost:9090/member/auth/kakao/callback&response_type=code"
-          ><img src="./src/images/login/kakao_login.jpg"
-        /></a>
-      </div>
-      <div class="login_api_google">
-        <a
-          href="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&theme=glif&flowName=GlifWebSignIn&flowEntry=SignUp"
-          ><img src="./src/images/login/google_btn.jpg"
-        /></a>
-      </div>
-      <!--1024수정-->
-      <a href="#" rel="modal:close" id="close-login"></a>
-    </div>
     </header>
 
     <!-- 장바구니 -->

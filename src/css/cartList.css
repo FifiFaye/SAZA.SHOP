@@ -93,7 +93,7 @@
     position: absolute;
     border: 0px solid red;
     top: 0;
-    left: 0;
+    left: 40%;
     font-size: 20px;
     font-weight: bold;
   }
@@ -145,7 +145,6 @@
     right: 0;
     top: -30px;
     font-size: 25px;
-
   }
 
   /*1018추가*/

@@ -3,8 +3,11 @@ $(function () {
   let cartItems = []; //장바구니
   let shippingFee; //배송비
 
-  //1024추가 모바일 토클 메뉴
-
+  //1025추가 모바일 토클 메뉴
+  $("#toggleBtn").click(function (e) {
+    // e.stopPropagation();
+    $("#test").slideToggle("slow");
+  });
 
   //1024추가 주문 결제 버튼 클릭시 주문이 안료됐다는 화면 노출
   $(".purchase-btn").click(function () {
@@ -32,14 +35,17 @@ $(function () {
   }
   renderHeader();
 
-//1025추가 cartList.html 바로 서버에 띄울 때 안 보이는 함수
+  //1025추가 cartList.html 바로 서버에 띄울 때 안 보이는 함수
   function checkLoginStatus() {
     const authenticated1 = localStorage.getItem("auth");
-    if (authenticated1 === "false" && $(location).attr("href") == "http://127.0.0.1:5500/cartList.html") {
-      $(location).attr("href", "http://127.0.0.1:5500/index.html")
+    if (
+      authenticated1 === "false" &&
+      $(location).attr("href") == "http://127.0.0.1:5500/cartList.html"
+    ) {
+      $(location).attr("href", "http://127.0.0.1:5500/index.html");
     }
   }
-  
+
   checkLoginStatus();
 
   //localStorage 저장 된 상품 가져오기
@@ -64,8 +70,8 @@ $(function () {
       </td>
       <td>
         <span class="cartPage_itemPrice"><span class='columns'>가격 : </span>${formatKRW(
-        item.price
-      )}</span>
+          item.price
+        )}</span>
       </td>
       <td class="priceTd" style="display:none;">
         <span class="cartPage_itemPrice">${item.price}</span>

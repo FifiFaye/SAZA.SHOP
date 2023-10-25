@@ -119,12 +119,12 @@
   /* 1024추가 로딩화면*/
   div#loadingZone {
     position: absolute;
-    top: 500px;
-    left: 44%;
+    top: 300px;
+    left: 40%;
   }
   div#loadingZone img {
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
   }
 
   /*1025추가 찜하기*/
@@ -132,7 +132,7 @@
     position: absolute;
     top: 20px;
     left: 40px;
-    z-index: 3;
+    /* z-index: 2; */
     font-size: 30px;
     color: gray;
   }
@@ -323,7 +323,7 @@
     position: absolute;
     top: 20px;
     left: 40px;
-    z-index: 9999;
+    z-index: 1;
     font-size: 30px;
     color: gray;
   }
@@ -368,5 +368,12 @@
   img.likeBtn-img {
     height: 120px;
     width: 90px;
+  }
+
+  div.item a {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
   }
 }

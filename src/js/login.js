@@ -1,21 +1,21 @@
 $(function () {
+  //1024추가 모바일 토클 메뉴
+  let header_width = $("header").width();
 
-   //1024추가 모바일 토클 메뉴
-   let header_width = $("header").width();
-   if(header_width <= 540){
-     $(document).ready(function () {
-       $("#toggleBtn").click(function (e) {
-         e.stopPropagation();
-         $("#test").slideToggle("slow");
-       });
-      
-       $(document).on("click", function(e) {
-         if (e.target.id != "test") {
-           $("#test").hide();
-         }
-       })
-     });
-   }
+  if (header_width <= 540) {
+    $(document).ready(function () {
+      $("#toggleBtn").click(function (e) {
+        e.stopPropagation();
+        $("#test").slideToggle("slow");
+      });
+
+      $(document).on("click", function (e) {
+        if (e.target.id != "test") {
+          $("#test").hide();
+        }
+      });
+    });
+  }
   //1019 로그인창 보여주기 함수
   $("#custom-login-btn").click(function () {
     $(this).attr("rel", "modal:open");
@@ -26,7 +26,6 @@ $(function () {
     alert("bye~!");
     location.reload();
   });
-
 
   function renderHeader() {
     const authenticated = localStorage.getItem("auth");
@@ -39,8 +38,6 @@ $(function () {
     }
   }
   //renderHeader();
-
-
 
   function login(e) {
     e.preventDefault();
@@ -55,7 +52,7 @@ $(function () {
       //로그인 화면 숨김처리한다
       alert("로그인 되었습니다.");
       $("#close-login").click();
-     
+
       localStorage.setItem("userId", userid);
       localStorage.setItem("auth", true);
       renderHeader();

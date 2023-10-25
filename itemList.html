@@ -25,9 +25,9 @@
       type="image/x-icon"
     />
     <script
-    src="https://kit.fontawesome.com/130e389537.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/130e389537.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/css/itemSpec.css" />
     <link rel="stylesheet" href="./src/css/base.css" />
     <link rel="stylesheet" href="./src/css/header.css" />
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="./src/css/login.css" />
     <link rel="stylesheet" href="./src/css/cartList.css" />
     <script defer src="src/js/login.js"></script>
-    <script src="src/js/cartList.js"></script>
+
     <script defer type="module" src="src/js/itemList.js"></script>
   </head>
 
@@ -93,8 +93,8 @@
       </a>
       <!-- 메인메뉴 -->
       <h2 id="toggleBtn"><i class="fa-solid fa-bars"></i></h2>
-     
-        <nav id="test">
+
+      <nav id="test">
         <ul id="mainMenu">
           <li class="Men">
             <a href="itemList.html?navCategory=Men&category=men_tops">Men</a>
@@ -107,32 +107,31 @@
           <li class="Kids">
             <a href="itemList.html?navCategory=Kids&category=kids_tops">Kids</a>
           </li>
-        
         </ul>
         <!-- 보조메뉴 -->
         <div id="infoWrap">
-        <ul id="infoMenu">
-          <li>
-            <a
-              id="custom-login-btn"
-              href="#ex1"
-              rel="modal:open"
-              class="login-btn"
-              >로그인</a
-            >
-          </li>
-          <li>
-            <a id="custom-logout-btn" href="" class="auth login-btn"
-              >로그아웃</a
-            >
-          </li>
-          <li><a id="toCart" href="#">장바구니</a></li>
-        </ul>
-      </div>
+          <ul id="infoMenu">
+            <li>
+              <a
+                id="custom-login-btn"
+                href="#ex1"
+                rel="modal:open"
+                class="login-btn"
+                >로그인</a
+              >
+            </li>
+            <li>
+              <a id="custom-logout-btn" href="" class="auth login-btn"
+                >로그아웃</a
+              >
+            </li>
+            <li><a id="toCart" href="#">장바구니</a></li>
+          </ul>
+        </div>
       </nav>
 
-       <!--로그인 모달창-->
-       <div id="ex1" class="modal">
+      <!--로그인 모달창-->
+      <div id="ex1" class="modal">
         <!--1024추가-->
         <h2>로그인</h2>
         <hr />
@@ -282,9 +281,8 @@
     <!--상품리스트-->
     <div id="loadingZone"></div>
     <div id="itemListArea"></div>
-     <i class="fa-solid fa-heart-circle-check" id="likeBtn"></i>
+    <i class="fa-solid fa-heart-circle-check" id="likeBtn"></i>
 
     <div class="wishListArea"></div>
-
   </body>
 </html>

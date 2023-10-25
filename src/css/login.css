@@ -7,8 +7,7 @@
   /* pc화면영역 로그인스타일시작 10.24 */
 
   #ex1 {
-    width: 100%;
-    border: 0px solid red;
+    z-index: 999;
   }
   #ex1 h2 {
     /* 중제목:로그인 */
@@ -107,6 +106,9 @@
 }
 /* pc화면영역 로그인스타일종료 10.24  */
 @media screen and (min-width: 1024px) {
+  #ex1 {
+    z-index: 999999;
+  }
   #ex1 h2 {
     font-family: "JeonjuCraftMjB";
     text-align: center;
@@ -170,12 +172,7 @@
     padding-top: 12px;
     text-align: center;
   }
-  /* label {
-    border: 1px solid red;
-    font-family: "D2Coding";
-    color: gray;
-  
-  } */
+
   input .id,
   input .pw {
     text-align: left;

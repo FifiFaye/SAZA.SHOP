@@ -1,23 +1,24 @@
 $(function () {
   //1024추가 모바일 토클 메뉴
   let header_width = $("header").width();
-  if(header_width <= 540){
+  console.log("header width", header_width);
+
+  if (header_width <= 540) {
     $(document).ready(function () {
       $("#toggleBtn").click(function (e) {
         e.stopPropagation();
         $("#test").slideToggle("slow");
       });
-     
-      $(document).on("click", function(e) {
+
+      $(document).on("click", function (e) {
         if (e.target.id != "test") {
           $("#test").hide();
         }
-      })
+      });
     });
   }
-  
-    // $("ul#mainMenu").toggleClass("show")
-  
+
+  // $("ul#mainMenu").toggleClass("show")
 
   //1019추가 로그인 상태 페이지 이동
   function renderHeader() {
@@ -112,13 +113,8 @@ $(function () {
   $("#custom-logout-btn").click(function () {
     localStorage.setItem("auth", "false");
     alert("bye~!");
-
     //location.reload();
   });
-
-  var mHtml = $("html");
-  var page = 1;
-  mHtml.animate({ scrollTop: 0 }, 10);
 
   var mHtml = $("html");
   var page = 1;
